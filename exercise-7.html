@@ -16,11 +16,8 @@
 */
     $(document).ready(function () {
         $("#add-button").click(function(){
-        $('#todo-list').append($("#description").val());
+        $('#todo-list').append($('<li>' + $("#description").val() + '</li>'));
         })
-        
-        $('#todo-list li').append(" X ");
-
 
 
     });
