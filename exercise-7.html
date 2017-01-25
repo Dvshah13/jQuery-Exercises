@@ -13,8 +13,22 @@
     2. the ability to check off tasks - strikes them out wo removing (add a checkbox)
     3. the ability to delete a task
     4. the ability to edit an existing task
+*/
+    $(document).ready(function () {
+        $("#add-button").click(function(){
+        $('#todo-list').append($("#description").val());
+        })
+        
+        $('#todo-list li').append(" X ");
 
-    */
+
+
+    });
+
+
+
+
+
     </script>
     <style>
     #wrapper {
